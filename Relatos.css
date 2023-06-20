@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+* {
+margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6fa3c2;
+}
+
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1d2e39;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color:  #1d2e39;
+
+}
+
+li{
+    list-style: none;
+    color: rgb(241, 244, 246);
+    cursor: pointer;
+    font-size: 19px;
+    transition: 5;
+    font-family: 'Tilt Warp', cursive; ;
+    background-color:  #1d2e39;
+
+}
+
+li:hover{
+    color:#6fa3c2;
+    transition: 1s;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+    margin-top: 3px;
+    background-color: #1d2e39;
+}
+
+#Banner{
+    background-image: url("./Midias/melhores-cidades-para-fazer-intercambio-2.jpg");
+    background-position:50% 80% ;
+    background-size: 1550px ;
+    width: 100%;
+    height: 450px;
+    margin-top: 5px;
+}
+
+.card-txt-container{
+    align-items:center;
+    justify-content: space-around;
+    margin-left: 25%;
+    margin-top: 50PX;
+}
+
+.cardtxt-content{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+    row-gap: 30px;
+    column-gap: auto;
+    position: relative;
+}
+
+.cardtxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #3f3f3f;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.398);
+}
+
+.icon{
+    margin-bottom: 25px;
+}
+
+.icon img{
+    width: 227px;
+}
+
+.contentxt{
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contentxt::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #3f3f3f);
+}
+
+.contentxt h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.contentxt h3::before{
+    content: '';
+    position: static;
+    height: 3px;
+    width: 50%;
+    background-color: #101112;
+    bottom: 120px;
+    border-radius: 30px;
+}
+
+.contentxt p{
+    color:#ffa200;
+    font-family: 'Tilt Warp', cursive; ;
+}
+
+#read_button{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #487e99;
+    color: #101112;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+    font-family: 'Tilt Warp', cursive; 
+}
+
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap:20px;
+    column-gap: 220px;
+    position:static;
+}
+
+#read_button:hover{
+    background-color: #565454;
+    color: #569dc1;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardtxt.active .contentxt{
+    height: auto;
+}
+
+.cardtxt.active .contentxt::before{
+    visibility: hidden;
+}
+
+
+.card-txt-container2{
+    align-items:center;
+    justify-content: center;
+    margin-top: 50PX;
+    margin-left: 30%
+}
+
+.cardtxt-content2{
+    width: 80%;
+    row-gap: 30px;
+    column-gap: auto;
+    position: relative;
+}
+
+.cardtxt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #3f3f3f;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.398);
+}
+
+.icon2{
+    margin-bottom: 25px;
+}
+
+.icon2 img{
+    width: 260px;
+}
+
+
+#read_button2{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #487e99;
+    color: #101112;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+    font-family: 'Tilt Warp', cursive; 
+}
+
+#read_button2:hover{
+    background-color: #565454;
+    color: #569dc1;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardtxt2.active .contentxt{
+    height: auto;
+}
+
+.cardtxt2.active .contentxt::before{
+    visibility: hidden;
+}
+
+/* 11111111111111111111111111111111111111111111111111111111111 */
+
+
+
+.card-txt-container3{
+    align-items:center;
+    justify-content: space-around;
+    display: flex;
+    margin-left: 20%;
+    margin-top:16%;
+    
+}
+
+.cardtxt-content3{
+    width: 80%;
+    row-gap: 30px;
+    column-gap: auto;
+    position: relative;
+}
+
+.cardtxt3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #3f3f3f;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.398);
+}
+
+.icon3{
+    margin-bottom: 25px;
+}
+
+.icon3 img{
+    width: 227px;
+}
+
+
+#read_button3{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #487e99;
+    color: #101112;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+    font-family: 'Tilt Warp', cursive; 
+}
+
+#read_button3:hover{
+    background-color: #565454;
+    color: #569dc1;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardtxt3.active .contentxt{
+    height: auto;
+}
+
+.cardtxt3.active .contentxt::before{
+    visibility: hidden;
+}
+
+
+footer{
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+span{
+    color: aliceblue;
+    font-family: 'Tilt Warp', cursive; 
+}
+
+.footer-navegation{
+    display: none;
+}
+
+.footer-list{
+    align-items:center;
+    flex-direction: column;
+    display: flex;
+}
+
+#logo1{
+    width: 100px;
+    height: auto;
+    margin-top: 3px;
+    background-color: transparent;
+    color: transparent;
+}
+
+@media(max-width: 768px){
+    .footer-navegation{
+        display: block;
+        width: 100%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+}

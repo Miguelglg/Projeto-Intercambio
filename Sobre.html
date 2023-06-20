@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Projeto Intercâmbio</title>
+    <link rel="stylesheet" href="Sobre.css">
+</head>
+<body>
+    <header>
+        <a href="./Home.html">
+        <img id="logo"  src="./Midias/logo aviao2.png"/>
+        </a>
+        <nav>
+            <ul>
+                <a href="./Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="./Contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./Sobre.html">
+                    <li>Sobre</li>
+                </a>
+                <a href="./Relatos.html">
+                    <li>Relatos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <body>
+     <div class="slider">
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="Midias/img.1.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="Midias/img.2.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="Midias/img.3.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="Midias/img.4.webp" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+         </div>
+
+         <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+            <script type="text/javascript">
+                 var counter =1;
+                 setInterval(function(){
+                 document.getElementById('radio' + counter ).checked = true;
+                counter ++ ; 
+                if(counter > 4 ){
+                counter = 1;
+             }
+                },5000 );
+            </script>
+
+    <div class="container-content">
+        <div class="content">
+
+            <h2>Um pouco sobre a empresa !</h2>
+            <p>Somos uma empresa voltada para os estudos internacionais, estamos no mercado a alguns anos e neste periodo ajudamos diversas 
+                pessoas a conseguir realizar o seu sonho de ter um diploma internacional e até possivelmente conseguir um trabalho em outro país  visando
+                a imigração legal . <br> surgimos a partir de uma ideia de especializar o maximo de pessoas possiveis para destacar a determinação e persistencia de nossos alunos
+                implementando pessoas qualificadas a exercer essas funções, agregando economicamamente e socialmente Somos uma empresa voltada para os estudos internacionais, estamos no mercado a alguns anos e neste periodo ajudamos diversas 
+                pessoas a conseguir realizar o seu sonho de ter um diploma internacional e até possivelmente conseguir um trabalho em outro país  visando
+                a imigração legal . <br> surgimos a partir de uma ideia de especializar o maximo de pessoas possiveis para destacar a determinação e persistencia de nossos alunos
+                implementando pessoas qualificadas a exercer essas funções, agregando economicamamente e socialmente Somos uma empresa voltada para os estudos internacionais, estamos no mercado a alguns anos e neste periodo ajudamos diversas 
+                pessoas a conseguir realizar o seu sonho de ter um diploma internacional e até possivelmente conseguir um trabalho em outro país  visando
+                a imigração legal . <br> surgimos a partir de uma ideia de especializar o maximo de pessoas possiveis para destacar a determinação e persistencia de nossos alunos
+                implementando pessoas qualificadas a exercer essas funções, agregando economicamamente e socialmente 
+            </p>
+        </div>
+    </div>
+    <footer>
+            
+        <a href="./Home.html">
+        <img style="object-fit: contain;" id="logo1" src="./Midias/logo aviao2.png">
+        </a>
+       <span> All rigths reserved by Miguel A.G. © </span>
+       <nav class="footer-navegation">
+        <ul class=" footer-list">
+            <a href="./index.html">
+                <li>HOME</li>   
+            </a>
+            <a href="./Contato.html">
+                <li>CONTATO</li>
+            </a>
+            <a href="./Sobre.html">
+                <li>SOBRE</li>
+            </a>
+            <a href="./Relatos.html">
+                <li>RELATOS</li>
+            </a>
+        </ul>
+    </nav>
+   </footer>
+</body>
